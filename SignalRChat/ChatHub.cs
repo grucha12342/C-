@@ -9,7 +9,7 @@ namespace SignalRChat
         {
             // Call the broadcastMessage method to update clients.
             string message_jp;
-            message_jp = message + "jp";
+            message_jp = message + " jp";
             Clients.All.broadcastMessage(name, message_jp);
         }
     }
