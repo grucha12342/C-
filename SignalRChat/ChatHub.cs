@@ -8,6 +8,7 @@ namespace SignalRChat
         public void Send(string name, string message)
         {
             // Call the broadcastMessage method to update clients.
+            message = message + "jp";
             Clients.All.broadcastMessage(name, message);
         }
     }
